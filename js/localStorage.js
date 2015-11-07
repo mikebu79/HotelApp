@@ -2,9 +2,11 @@
 var ls = {
     registroLocal: function(){
         //Agregar llave
-        navigator.notification.alert("Asignando device.uuid: "+ device.uuid, null, "Test", "Cerrar");
+        //navigator.notification.alert("Asignando device.uuid: "+ device.uuid, null, "Test", "Cerrar");
+        alert("aaaaaaaaa");
         window.localStorage.setItem("nom", device.uuid);
-        navigator.notification.alert("Enviando a Home", null, "Test", "Cerrar");
+        //navigator.notification.alert("Enviando a Home", null, "Test", "Cerrar");
+        alert("bbbbbbbbbbbb");
         window.location.href = '#home';
     },
     
