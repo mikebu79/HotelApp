@@ -16,8 +16,8 @@ var almacen = {
     },
     tablaReserva: function (tx) {
         tx.executeSql("CREATE TABLE IF NOT EXIST reservas (th, np, nh, nd)");
-        tx.executeSql("INSERT INTO reservas (th, np, nh, nd) VALUES ("+
-                      almacen.th+", "+almacen.np+", "+almacen.nh+", "+almacen.nd+")");
+        tx.executeSql("INSERT INTO reservas (th, np, nh, nd) VALUES ('"+
+                      almacen.th+"', '"+almacen.np+"', '"+almacen.nh+"', '"+almacen.nd+"')");
     },
     
     error: function (e) {
